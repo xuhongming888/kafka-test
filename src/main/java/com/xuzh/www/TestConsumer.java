@@ -1,4 +1,4 @@
-package com.cnc.qoss;
+package com.xuzh.www;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
