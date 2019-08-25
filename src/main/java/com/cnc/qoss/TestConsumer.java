@@ -32,7 +32,7 @@ public class TestConsumer {
         // value的序列化类
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         KafkaConsumer<String,String> consumer = new KafkaConsumer<>(props);
-        consumer.subscribe(Arrays.asList("qoss_webtrans"));
+        consumer.subscribe(Arrays.asList("topic_consume"));
 
         while (true){
             ConsumerRecords<String,String> records = consumer.poll(3000);
